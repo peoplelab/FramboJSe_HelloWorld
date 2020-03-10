@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+
+
+
+		<route>
+		<name>home</name>
+		<virtual>home/{resource}</virtual>
+		<physical>~/private/aspx/home.aspx</physical>
+	</route>
+	<route>
+		<name>helloworld</name>
+		<virtual>home/helloworld</virtual>
+		<physical>~/private/test_static/helloworld.html</physical>
+	</route>
+
+
+	<!-- Add here others routes -->
+	<route></route>
+</routes>

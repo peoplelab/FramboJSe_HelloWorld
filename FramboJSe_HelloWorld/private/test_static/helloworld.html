@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			FramboJSe - Public Y
+		</title>
+
+		<!-- ** 3d Partes  - Caricamento delle librerie di terze parti ** -->
+		<script type="text/javascript" src="/System/3rd-parties/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="/System/3rd-parties/jquery-ui/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/System/3rd-parties/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="/System/3rd-parties/jscookie/js.cookie.js"></script>
+		<script type="text/javascript" src="/System/3rd-parties/fontawesome/js/fontawesome-all.min.js"></script>
+		<script type="text/javascript" src="/System/3rd-parties/system/system.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="/System/3rd-parties/jquery-ui/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="/System/3rd-parties/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/System/3rd-parties/bootstrap/css/bootstrap-directional-buttons.min.css" />
+		<link rel="stylesheet" type="text/css" href="/System/3rd-parties/fontawesome/css/fa-svg-with-js.css" />
+		
+
+		<!-- ** System - Diciarazioni globali e caricamento kernel del framework ** -->
+		<script type="text/javascript">
+			//  Dichiarazioni variabili globali
+			var __PageScope  = 'private';
+			var __SYS_config = '';
+			var __SYS_version= '';
+		</script>
+		<script type="text/javascript" src="/private/config.pvt.js"></script>
+		<script type="text/javascript" src="/System/config.sys.js"></script>
+		<script type="text/javascript" src="/System/framboJSe.fw/libs/js/main.sys.js"></script>
+
+
+		<!-- ** Application - Script e stili specifici dell'applicazione ** -->
+		<link rel="icon" href="/Public/resources/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="/private/resources/css/overrides.pub.min.css" />
+		<link rel="stylesheet" type="text/css" href="/private/resources/css/tipografici.pub.min.css" />
+		<link rel="stylesheet" type="text/css" href="/private/resources/css/strutturali.pub.min.css" />
+		<link rel="stylesheet" type="text/css" href="/private/resources/css/graphics.pub.min.css" />
+		
+		<link rel="stylesheet" type="text/css" href="/private/resources/css/application.pub.css" />
+
+
+
+		<!-- ** Inizializzazione framework - Definizione settore e caricamento modulo router **-->
+		<script type="text/javascript">
+			SystemJS.import('router').then(function(router) {
+				router.init({
+					Sector: 'home'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<form method="post" action="./index" id="form1">
+		
+			<!-- ** Contenitore effettivo dell'applicazione ** -->			
+			<section id="pageContent" class="default margin-b-50 clearfix">		
+				<div id="mainContainer">
+					<div id="pageContainer" class="container default padding-t-30 margin-t-30 margin-b-50">
+		
+						<h1>Hello Word</h1>
+						<p class="margin-t-100">
+							Sono un'applicazione costruita con FramboJSe.js
+						</p>
+					</div>
+				</div>
+			</section>
+
+		</form>
+	</body>
+</html>
+
