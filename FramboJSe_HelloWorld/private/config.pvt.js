@@ -18,6 +18,7 @@
 		modules  : _pvtRoot + 'modules/',
 		resources: _pvtRoot + 'resources/',
 		templates: _pvtRoot + 'templates/',
+		node_modules: _pvtRoot + 'resources/js/node_modules/',
 	}
 
 	var __homepage = {
@@ -40,7 +41,13 @@
 			// Sitemap
 			customizeSitemap   : _pvtPaths.framework + 'sitemapCustomization.pvt.js',
 
-			
+
+			// 3rd parties libraries
+			react: _pvtPaths.resources + 'js/React/react.development.js',
+			'react-dom': _pvtPaths.resources + 'js/React/react-dom.development.js',
+			retargetEvents: _pvtPaths.node_modules + 'react-shadow-dom-retarget-events/index.js',
+			webcomponents: _pvtPaths.node_modules + '@webcomponents/webcomponentsjs/webcomponents-loader.js',
+			CEadapter: _pvtPaths.node_modules + '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js',
 		}
 	};
 

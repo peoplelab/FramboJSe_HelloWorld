@@ -14,7 +14,8 @@
 
 	// ** Declare main paths **
 	var _sysRoot      = '/System/';												// System folder root
-	var _sys3rdParts  = _sysRoot + '3rd-parties/';								// Path: libraries/frameworks of 3rd parties
+	var _sys3rdParts = _sysRoot + '3rd-parties/';								// Path: libraries/frameworks of 3rd parties
+	var _sysNodeModules = _sysRoot + '3rd-parties/node_modules/';				// Path: libraries/frameworks of 3rd parties installed with npm
 	var _sysFrameWork = _sysRoot + 'FramboJSe.fw/';								// Path: our framework
 	var _sysWrappers  = _sysRoot + 'wrappers/';									// Path: wrappers (drivers for 3rd parties libraries)
 	var _sysTemplates = _sysRoot + 'templates/';								// System templates path
@@ -85,7 +86,29 @@
 			currentModel      : ''+__SYS_version,
 			currentPresenter  : ''+__SYS_version,
 			currentDashboard  : ''+__SYS_version,
-		}
+
+
+			// ** transpiler **
+			'plugin-babel': _sysNodeModules + 'systemjs-plugin-babel/plugin-babel.js',
+			'systemjs-babel-build': _sysNodeModules + 'systemjs-plugin-babel/systemjs-babel-browser.js',
+		},
+		meta: {
+			'*.js': {
+				babelOptions: {
+					stage1: true,
+					es2015: true,
+					react: true,
+				}
+			},
+			'*.jsx': {
+				babelOptions: {
+					stage1: true,
+					es2015: true,
+					react: true,
+				}
+			}
+		},
+		transpiler: 'plugin-babel'
 	}
 
 

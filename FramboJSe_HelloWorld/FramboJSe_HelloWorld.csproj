@@ -79,8 +79,13 @@
     <Content Include="private\config.pvt.js" />
     <Content Include="private\framboJSe.ext\routerList.pvt.js" />
     <Content Include="private\modules\home\controller\home.controller.js" />
+    <Content Include="private\modules\home\controller\hybrid.controller.js" />
     <Content Include="private\modules\home\model\home.model.js" />
+    <Content Include="private\modules\home\model\hybrid.model.js" />
     <Content Include="private\modules\home\presenter\home.presenter.js" />
+    <Content Include="private\modules\home\presenter\hybrid.presenter.js" />
+    <Content Include="private\react-app\App\App.jsx" />
+    <Content Include="private\react-app\Bridge\App-Bridge.jsx" />
     <Content Include="private\resources\css\application.pvt.css">
       <DependentUpon>application.pvt.less</DependentUpon>
     </Content>
@@ -135,6 +140,9 @@
     <Content Include="private\resources\css\tipografici.min.css">
       <DependentUpon>tipografici.css</DependentUpon>
     </Content>
+    <Content Include="private\resources\js\React\react-dom.development.js" />
+    <Content Include="private\resources\js\React\react.development.js" />
+    <Content Include="private\templates\home\hybrid.html" />
     <Content Include="private\templates\home\pippo.html" />
     <Content Include="private\templates\home\home.html" />
     <Content Include="private\templates\templatesList.pvt.js" />
@@ -328,7 +336,9 @@
     <Content Include="system\resources\css\overrides.sys - Copia.less" />
     <Content Include="system\resources\css\structural.sys - Copia.less" />
     <Content Include="private\aspx\Main.pvt.Master" />
+    <Content Include="private\resources\js\package-lock.json" />
     <None Include="Properties\PublishProfiles\FramboJSe.pubxml" />
+    <Content Include="system\3rd-parties\package-lock.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -343,7 +353,6 @@
     <Folder Include="private\framboJSe.ext\snippets\" />
     <Folder Include="private\framboJSe.ext\widgets\" />
     <Folder Include="private\resources\images\" />
-    <Folder Include="private\resources\js\" />
     <Folder Include="private\resources\pdf\" />
     <Folder Include="system\FramboJSe.fw\libs\css\" />
     <Folder Include="system\resources\images\" />

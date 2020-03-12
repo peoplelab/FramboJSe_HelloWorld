@@ -83,6 +83,15 @@ define (function(){
 						presenter: 'home.presenter.js'+__SYS_version,
 						templateID: [302]
 					}
+				}, {
+					alias: ['react-bridge'],
+					data: {
+						pageID: 'react-bridge',
+						controller: 'hybrid.controller.js' + __SYS_version,
+						model: 'hybrid.model.js' + __SYS_version,
+						presenter: 'hybrid.presenter.js' + __SYS_version,
+						templateID: [303]
+					}
 				}
 			]
 		}
